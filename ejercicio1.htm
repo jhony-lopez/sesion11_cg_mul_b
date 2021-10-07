@@ -40,9 +40,8 @@ function init() {
     var arrCube = [];
 
     var t = 2.2;
-    var nC = 6
+    var nC = 5
     for (var i = 0; i < nC; i++) {
-        d = t * 1.05
         arrCube.push(cubo(t, t, t, 0, 0, 0, 'Basic', (i==0 ? 'red': i==1 ? 'green' : 'blue'), false));
         
         if (i == 0)
@@ -61,8 +60,6 @@ function init() {
 
     camera = new THREE.PerspectiveCamera(130, window.innerWidth / window.innerHeight, 0.1, 100);
     camera.position.set(6, 6, 6);
-    //camera.lookAt(axesHelper.position);
-    clock = new THREE.Clock();
     window.addEventListener('resize', onWindowResize, false);
 }
 
