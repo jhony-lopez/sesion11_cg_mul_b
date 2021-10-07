@@ -41,7 +41,8 @@ function init() {
     var arrCube = [];
 
     var t = 2.2;
-    for (var i = 0; i < 3; i++) {
+    var nC = 5
+    for (var i = 0; i < nC; i++) {
         d = t * 1.05
         arrCube.push(cubo(t, t, t, 0, 0, 0, 'Basic', (i==0 ? 'red': i==1 ? 'green' : 'blue'), false));
         
